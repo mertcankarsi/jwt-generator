@@ -8,5 +8,38 @@
     <artifactId>jwt-generator</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>0.9.0</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.xml.bind</groupId>
+                <artifactId>jaxb-api</artifactId>
+                <version>2.3.1</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
