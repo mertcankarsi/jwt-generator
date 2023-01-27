@@ -19,7 +19,7 @@ public class App {
         byte[] secret = Base64.getDecoder().decode("HrPoTEVODeSRT5JlPBpSRfTTzPbOlQGrJXeG1bbhwDI");
 
         String jwt = Jwts.builder()
-                .setSubject("Mert Can Karsi")
+                .setSubject("Mertcan Karsi")
                 .claim("email", "karsi.mertcan@gmail.com")
                 .claim("role", "admin")
                 .setIssuedAt(Date.from(instant))
